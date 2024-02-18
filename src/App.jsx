@@ -7,6 +7,7 @@ import Home from "./components/Layout/Home";
 import Skills from "./components/Layout/Skills";
 import Project from "./components/Layout/Project";
 import Technology from "./components/Layout/Technology";
+import Contact from "./components/Layout/Contact";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <Skills />
       <Technology />
       <Project />
+      <Contact />
     </>
   );
 }

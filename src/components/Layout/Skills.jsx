@@ -19,7 +19,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, transform: "scale(1)" }}
           >
             <h1 className="text-white font-[PoppinsBold] text-[40px] text-center">
-              SKILLS
+              Skills
             </h1>
             <p className="text-[rgba(255,255,255,.7)] font-[PoppinsSemiBold] text-center text-lg">
               What Can I Do Best?

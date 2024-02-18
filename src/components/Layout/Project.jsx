@@ -7,7 +7,7 @@ import Card from "../Fragments/Project/Card";
 
 const Project = () => {
   return (
-    <div>
+    <div className="-mt-32">
       <span id="project" className="py-10 opacity-0 w-[100vw] block">
         .
       </span>
@@ -18,7 +18,7 @@ const Project = () => {
             whileInView={{ opacity: 1, transform: "scale(1)" }}
           >
             <h1 className="text-white font-[PoppinsBold] text-[40px] text-center">
-              PROJECT
+              Project
             </h1>
             <p className="text-[rgba(255,255,255,.7)] font-[PoppinsSemiBold] text-center text-lg">
               What Have I Ever Done?

@@ -21,5 +21,5 @@ export default {
       "super-mini": { min: "0px", max: "240px" },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
