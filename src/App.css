@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets//Font//Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('./assets//Font//Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('./assets//Font//Poppins-Bold.ttf');
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+*:not(h1,h2,h3,h4,h5,h6, p, span) {
+    overflow-x: hidden;
+
+}
+
+
+
+:root {
+    /* background: linear-gradient(45deg, rgba(0,142,228,1) 0%, rgba(3,0,52,1) 59%); */
+    background: #070b1b;
+background-repeat: no-repeat;
+}
+
+
+
+.linkedin::before, .instagram::before, .github::before {
+    
+    transform: scale(0);
+    transition: 0.25s ease-in-out;
+
+}
+.linkedin:hover::before, .instagram:hover::before, .github:hover::before {
+    transform: scale(1);
+    opacity: 1;
+    
+}
