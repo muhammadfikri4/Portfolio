@@ -24,7 +24,7 @@ const Technology = () => {
               </p>
             </motion.div>
 
-            <div className="flex justify-center items-center gap-7 flex-wrap py-7">
+            <div className="flex justify-center items-center gap-7 hp:gap-5 flex-wrap py-7">
               <CardList />
             </div>
           </div>

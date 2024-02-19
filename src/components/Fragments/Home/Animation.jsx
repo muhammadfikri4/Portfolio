@@ -7,10 +7,9 @@ const Animation = () => {
   return (
     <motion.div
       initial={{ transform: "scale(0)" }}
-      animate={{ transform: "scale(1)" }}
+      whileInView={{ transform: "scale(1)" }}
       transition={{
         duration: 0.4,
-        delay: 0.25,
       }}
       className="p-0 max-w-max mini:ml-[10px] hp:mt-[-40px]"
     >

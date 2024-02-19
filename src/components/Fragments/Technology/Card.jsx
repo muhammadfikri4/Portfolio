@@ -10,7 +10,7 @@ const Card = ({ logo, alt, title, duration }) => {
         transition={{
           duration,
         }}
-        className="w-40 h-40 py-8 flex flex-col justify-center gap-5 items-center bg-[#151030] rounded-xl hover:bg-[#e6b71e] cursor-pointer"
+        className="hp:w-36 hp:h-36 mini:w-40 mini:h-40 w-40 h-40 py-8 flex flex-col justify-center  gap-5 hp:gap-3 items-center bg-[#151030] rounded-xl hover:bg-[#e6b71e] cursor-pointer"
       >
         <img
           src={logo}
@@ -19,7 +19,7 @@ const Card = ({ logo, alt, title, duration }) => {
           height={80}
           className="rounded-lg"
         />
-        <h1 className="text-white">{title}</h1>
+        <h1 className="text-white text-wrap text-center hp:text-sm">{title}</h1>
       </motion.div>
     </>
   );

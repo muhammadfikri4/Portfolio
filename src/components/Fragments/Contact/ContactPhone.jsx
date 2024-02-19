@@ -13,6 +13,7 @@ const ContactPhone = () => {
         title="+62895360778397"
         bg="#108b1b"
         href="https://api.whatsapp.com/send?phone=62895360778397"
+        duration={0.1}
       />
       <Card
         logo={Email}
@@ -20,6 +21,7 @@ const ContactPhone = () => {
         title="muhfikriantoaji@gmail.com"
         bg="#a00"
         href="mailto:muhfikriantoaji@gmail.com"
+        duration={0.3}
       />
 
       <Card
@@ -28,6 +30,7 @@ const ContactPhone = () => {
         title="Tangerang, Banten"
         bg="#134ce9"
         href="https://www.google.com/maps/place/Kabupaten+Tangerang,+Banten/data=!4m2!3m1!1s0x2e69ffb6b0ad7ae3:0x301576d14feb9b0?sa=X&ved=2ahUKEwidhOS7g7eEAxUf1zgGHSrIDC0Q8gF6BAgPEAA"
+        duration={0.5}
       />
     </div>
   );

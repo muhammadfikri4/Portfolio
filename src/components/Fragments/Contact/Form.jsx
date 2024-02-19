@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { sendMessage } from "../../../utils/api";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 const Form = () => {
   const [data, setData] = useState({
@@ -12,7 +13,14 @@ const Form = () => {
   });
 
   return (
-    <form className="flex flex-col gap-5 w-[500px] tablet:max-w-[400px] hp:w-[300px] py-5">
+    <motion.form
+      initial={{ opacity: 0, transform: "scale(0)" }}
+      whileInView={{ opacity: 1, transform: "scale(1)" }}
+      transition={{
+        duration: 0.3,
+      }}
+      className="flex flex-col gap-5 w-[500px] tablet:max-w-[400px] hp:w-[300px] py-5"
+    >
       <input
         type="text"
         placeholder="Full Name"
@@ -47,7 +55,7 @@ const Form = () => {
       >
         Submit
       </button>
-    </form>
+    </motion.form>
   );
 };
 
