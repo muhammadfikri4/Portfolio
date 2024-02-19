@@ -4,6 +4,13 @@ const sendMessage = async (
 ) => {
   e.preventDefault();
   const MySwal = withReactContent(Swal);
+  if (!fullName || !email || !message) {
+    MySwal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "The input field cannot be empty!",
+    });
+  }
   try {
     await axios.post(
       "https://muhfikri-portofolio-default-rtdb.firebaseio.com/message.json",
