@@ -10,6 +10,7 @@ const sendMessage = async (
       title: "Oops...",
       text: "The input field cannot be empty!",
     });
+    return 0;
   }
   try {
     await axios.post(
