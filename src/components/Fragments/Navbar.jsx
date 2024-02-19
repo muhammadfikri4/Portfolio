@@ -124,14 +124,14 @@ const Navbar = ({ open, setOpen }) => {
                 >
                   <a href="#technology">Tech</a>
                 </li>
-                <li
+                {/* <li
                   className={`text-[18px] ${
                     active === "project" ? "text-[#fff]" : "text-[#999]"
                   }`}
                   onClick={() => setActive("project")}
                 >
                   <a href="#project">Project</a>
-                </li>
+                </li> */}
                 <li
                   className={`text-[18px] ${
                     active === "contact" ? "text-[#fff]" : "text-[#999]"
@@ -188,9 +188,9 @@ const Navbar = ({ open, setOpen }) => {
           }`}
           onClick={() => setActive("technology")}
         >
-          Technology
+          Tech
         </a>
-        <a
+        {/* <a
           href="#project"
           className={`text-[18px] px-5 py-2 ${
             active === "project" ? "text-[#fff]" : "text-[#999]"
@@ -198,7 +198,7 @@ const Navbar = ({ open, setOpen }) => {
           onClick={() => setActive("project")}
         >
           Project
-        </a>
+        </a> */}
 
         <a
           href="#contact"

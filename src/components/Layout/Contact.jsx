@@ -4,25 +4,29 @@ import Email from "../../assets/Icons/email.svg";
 import Location from "../../assets/Icons/location.svg";
 import Card from "../Fragments/Contact/Card";
 import ContactPhone from "../Fragments/Contact/ContactPhone";
-import Contacts from "../Fragments/Contact/Contacts";
+import Lottie from "lottie-react";
+import AnimationContact from "../../assets/Lottie/contact.json";
+import { motion } from "framer-motion";
+import Animation from "../Fragments/Contact/Animation";
+import Form from "../Fragments/Contact/Form";
+import Title from "../Fragments/Contact/Title";
 
 const Contact = () => {
   return (
     <>
-      <div className="divider divider-info text-white overflow-hidden h-max text-3xl before:bg-white after:bg-white after:opacity-70 before:opacity-70 font-[PoppinsBold]">
-        Contact Me
-      </div>
-      <div className="hp:hidden flex justify-center flex-col items-center py-10 px-3 box-border gap-5">
-        <Contacts />
-      </div>
-
-      <ContactPhone />
-      {/* <div className="divider divider-info text-white overflow-hidden h-max before:bg-white after:bg-white after:opacity-70 before:opacity-70 mb-0">
-        &copy; Muhammad Fikrianto Aji
-    </div> */}
-      <span id="contact" className="opacity-0 w-[100vw] block">
+      <span id="contact" className="opacity-0 w-[100vw] block my-4">
         .
       </span>
+      <div className="flex hp:flex-col tablet:flex-col w-screen">
+        <Animation />
+        <div className="pt-12 flex flex-col tablet:items-center hp:items-center hp:px-10">
+          <Title />
+          <Form />
+        </div>
+      </div>
+      <div className="flex flex-col items-center">
+        <ContactPhone />
+      </div>
     </>
   );
 };

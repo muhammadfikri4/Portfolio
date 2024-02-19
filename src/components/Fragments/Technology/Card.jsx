@@ -10,7 +10,7 @@ const Card = ({ logo, alt, title, duration }) => {
         transition={{
           duration,
         }}
-        className="w-48 h-48 py-8 flex flex-col justify-center gap-5 items-center bg-[#151030] rounded-xl"
+        className="w-40 h-40 py-8 flex flex-col justify-center gap-5 items-center bg-[#151030] rounded-xl hover:bg-[#e6b71e] cursor-pointer"
       >
         <img
           src={logo}

@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Introduction = () => {
   return (
-    <div className="flex flex-col justify-center gap-[10px]">
+    <div className="flex flex-col justify-center gap-[10px] z-[9]">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
