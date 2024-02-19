@@ -19,7 +19,7 @@ const ContactPhone = () => {
         alt="Email"
         title="muhfikriantoaji@gmail.com"
         bg="#a00"
-        href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZcQxphwQCjsdnsMSxflbLWtRbCJsSjdWbtBSlBbJgGbBgWJCBGFwMDWhRrNvSCBfcmxhL"
+        href="mailto:muhfikriantoaji@gmail.com"
       />
 
       <Card

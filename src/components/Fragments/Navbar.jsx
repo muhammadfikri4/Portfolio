@@ -104,6 +104,7 @@ const Navbar = ({ open, setOpen }) => {
                   className={`text-[18px] ${
                     active === "home" ? "text-[#fff]" : "text-[#999]"
                   }`}
+                  title="Home"
                   onClick={() => setActive("home")}
                 >
                   <a href="#home">Home</a>
@@ -112,6 +113,7 @@ const Navbar = ({ open, setOpen }) => {
                   className={`text-[18px] ${
                     active === "skills" ? "text-[#fff]" : "text-[#999]"
                   }`}
+                  title="Skills"
                   onClick={() => setActive("skills")}
                 >
                   <a href="#skills">Skills</a>
@@ -120,6 +122,7 @@ const Navbar = ({ open, setOpen }) => {
                   className={`text-[18px] ${
                     active === "technology" ? "text-[#fff]" : "text-[#999]"
                   }`}
+                  title="Tech"
                   onClick={() => setActive("technology")}
                 >
                   <a href="#technology">Tech</a>
@@ -136,6 +139,7 @@ const Navbar = ({ open, setOpen }) => {
                   className={`text-[18px] ${
                     active === "contact" ? "text-[#fff]" : "text-[#999]"
                   }`}
+                  title="Contact"
                   onClick={() => setActive("contact")}
                 >
                   <a href="#contact">Contact</a>
@@ -169,6 +173,7 @@ const Navbar = ({ open, setOpen }) => {
             active === "home" ? "text-[#fff]" : "text-[#999]"
           }`}
           onClick={() => setActive("home")}
+          title="Home"
         >
           Home
         </a>
@@ -178,6 +183,7 @@ const Navbar = ({ open, setOpen }) => {
             active === "skills" ? "text-[#fff]" : "text-[#999]"
           }`}
           onClick={() => setActive("skills")}
+          title="Skills"
         >
           Skills
         </a>
@@ -187,6 +193,7 @@ const Navbar = ({ open, setOpen }) => {
             active === "technology" ? "text-[#fff]" : "text-[#999]"
           }`}
           onClick={() => setActive("technology")}
+          title="Tech"
         >
           Tech
         </a>
@@ -206,6 +213,7 @@ const Navbar = ({ open, setOpen }) => {
             active === "contact" ? "text-[#fff]" : "text-[#999]"
           }`}
           onClick={() => setActive("contact")}
+          title="Contact"
         >
           Contact
         </a>
@@ -271,5 +279,3 @@ const Navbar = ({ open, setOpen }) => {
 };
 
 export default Navbar;
-
-// overflow-hidden  before:content-[''] before:w-[35px] before:h-[35px] before:bg-white before:rounded-full before:absolute before:scale-0  linkedin before:z-[-10]

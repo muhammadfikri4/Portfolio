@@ -52,5 +52,3 @@ const Project = () => {
 };
 
 export default Project;
-
-// 3d3e42
